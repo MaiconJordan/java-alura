@@ -18,26 +18,22 @@ package javacomoo.partedois.desafiofinal;
  */
 public class ContaBancaria {
 
-    private int numeroConta;
-    private double saldo;
-    private String titular;
 
-    public int getNumeroConta() {
-        return numeroConta;
+    protected double saldo;
+
+
+
+    public void depositar(double valor){
+        this.saldo += valor;
     }
-    public void setNumeroConta(int numeroConta) {
-        this.numeroConta = numeroConta;
+
+    public void sacar(double valorSaque){
+        this.saldo -= valorSaque;
     }
-    public double getSaldo() {
-        return saldo;
+
+    public void consultarSaldo(){
+        System.out.println(this.saldo);
     }
-    public void setSaldo(double saldo) {
-        this.saldo = saldo;
-    }
-    public String getTitular() {
-        return titular;
-    }
-    public void setTitular(String titular) {
-        this.titular = titular;
-    }
+
+
 }

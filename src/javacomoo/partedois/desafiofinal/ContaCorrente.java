@@ -1,5 +1,5 @@
 /*
- * @(#)Principal.java
+ * @(#)ContaCorrente.java
  *
  * Copyright (c) J-Tech Solucoes em Informatica.
  * All Rights Reserved.
@@ -12,20 +12,20 @@
 package javacomoo.partedois.desafiofinal;
 
 /**
- * Class Principal
+ * Class ContaCorrente
  *
  * @author maicon.rocha
  */
-public class Principal {
+public class ContaCorrente extends ContaBancaria {
 
-    public static void main(String[] args) {
+    private double tarifaMensal = 10;
 
-        ContaCorrente cr = new ContaCorrente();
-
-        cr.depositar(100);
-        cr.consultarSaldo();
-        cr.cobrarTarifaMensal();
-        cr.consultarSaldo();
+    public void cobrarTarifaMensal() {
+        saldo -= tarifaMensal;
+        System.out.println("Tarifa mensal de " + tarifaMensal + " cobrada. Saldo atual: " + saldo);
     }
+
+
+
 
 }
