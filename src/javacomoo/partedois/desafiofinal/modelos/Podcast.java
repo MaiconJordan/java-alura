@@ -16,7 +16,7 @@ package javacomoo.partedois.desafiofinal.modelos;
  *
  * @author maicon.rocha
  */
-public class Podcast {
+public class Podcast extends Audio{
 
     private String apresentador;
     private  String descricao;

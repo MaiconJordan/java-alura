@@ -21,7 +21,7 @@ public class Audio {
     private String titulo;
     private int totalReproducoes;
     private int totalCurtidas;
-    private double classifacao;
+    private int classifacao;
 
     public String getTitulo() {
         return titulo;
